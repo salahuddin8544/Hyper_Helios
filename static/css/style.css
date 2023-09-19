@@ -8,8 +8,13 @@ body{
    width: 30%;
    margin: 40px auto;
    border-radius: 5px;
-   padding: 20px;
+   padding: 15px;
 
+}
+.form-detials h3,.informatin h3{
+   color: #ffff;
+   font-size: 20px;
+   font-weight: bold;
 }
 .form-detials label{
     color: white;
@@ -45,3 +50,34 @@ input[type=submit]{
      
      }
 }
+.informatin{
+    background-color: #463ACC;
+    width: 50%;
+    margin: 0 auto; 
+   border-radius: 5px;
+   padding: 10px;
+}
+
+
+.table {
+    display: table;
+    width: auto;
+    margin: 0 auto;
+    border: 1px solid #666666;
+    color: white;
+  }
+  
+  .table-row {
+    display: table-row;
+    width: auto;
+    clear: both;
+  }
+  
+  .table-col {
+    float: left;
+    display: table-column;
+    width: 200px;
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+  
