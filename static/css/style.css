@@ -38,18 +38,7 @@ input[type=submit]{
     font-size: 17px;
 
 }
-@media screen and (max-width:780px){
-    .form-detials{
-        width: 50%;
-     
-     }
-}
-@media screen and (max-width:500){
-    .form-detials{
-        width: 70%;
-     
-     }
-}
+/* table section */
 .informatin{
     background-color: #463ACC;
     width: 50%;
@@ -76,8 +65,24 @@ input[type=submit]{
   .table-col {
     float: left;
     display: table-column;
-    width: 200px;
+    width: 180px;
     border: 1px solid #ccc;
     padding: 5px;
   }
   
+.table-col .delete-button{
+    text-decoration: none;
+}
+  /* media queries */
+  @media screen and (max-width:780px){
+    .form-detials{
+        width: 50%;
+     
+     }
+}
+@media screen and (max-width:500){
+    .form-detials{
+        width: 70%;
+     
+     }
+}

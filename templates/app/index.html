@@ -8,15 +8,16 @@
 </head>
 <body>
     <div class="form-detials">
-        <h3>General Information</h3>
-        <form action="">
+        <h3>Save your Information</h3>
+        <form action="/create">
+            {% csrf_token %}
             <div class="form-item">
                 <label for="">Name</label><br>
-                <input placeholder="Your name" type="text" name="name">
+                <input placeholder="Your name" type="text" name="name" required>
             </div>
             <div class="form-item">
                 <label for="">Phone Number</label><br>
-                <input placeholder="Your Phone number" type="text" name="number">
+                <input type="text" name="number" placeholder="Your phone number" pattern="[0-9+]{14}" title="Use only BD country code">
             </div>
             <input type="submit" value="Submit">
         </form>
@@ -29,11 +30,13 @@
         <div class="table-col">Phone Number</div>
         <div class="table-col">Action</div>
     </div>
+    {% for data in data %}
     <div class="table-row">
-        <div class="table-col">a</div>
-        <div class="table-col">b</div>
-        <div class="table-col">c</div>
+        <div class="table-col">{{data.name}}</div>
+        <div class="table-col">{{data.number}}</div>
+        <div class="table-col"><a class="delete-button" href="delete/{{data.id}}">Delete</a></div>
     </div>
+    {%endfor %}
     </div>
         </div>
 </body>
