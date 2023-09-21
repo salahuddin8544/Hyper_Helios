@@ -1,0 +1,22 @@
+TECHNICAL TASK
+
+
+Hyper Helios
+Develop a Django application where it will display a list of data in a table.
+
+Requirements: (Must fulfill)
+
+=> There will be a form with two fields: a) Name b) Phone number.
+=> The design should be responsive.
+=> We would like to respect your creativity in UI design.
+=> Push the code to a GitHub repository.
+=> Every git commit should be relevant and meaningful.
+=> The phone number field will only accept BD phone numbers with a country
+   code. If the phone number is invalid, the phone number field should show an
+   inline error (below the field).
+=> There will be a detail page for each row, and the route path will be "/contact/
+   id".
+
+Constraints:
+=> You should not use HTML Table tags for the data table.
+=> You have to write raw CSS for styling (No framework).
